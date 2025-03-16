@@ -1,0 +1,33 @@
+.sponsor{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor div{
+    text-align: center;
+    margin: 10px;
+}
+
+.sponsor div p{
+    padding-top: 20px;
+}
+
+@media(max-width:900px){
+    .sponsor{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .sponsor{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:450px){
+    .sponsor{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
